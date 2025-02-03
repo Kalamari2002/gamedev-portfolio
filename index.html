@@ -27,7 +27,6 @@
 </head>
 
 <body>
-    <hello-world></hello-world>
     <nav>
         <h2>Gabriel Ikezaki - Game Dev Portfolio</h2>
         <ul>
@@ -43,8 +42,19 @@
             <li>
                 <a href="about.html">About Me</a>
             </li>
+            <li>
+                <a href="lab.html">Lab</a>
+            </li>
         </ul>
     </nav>
+    <template id="game-page">
+        <h2 class="game-page-title"></h2>
+        <video class="demo" width="300">
+            <source src="" type="video/mp4">
+        </video>
+        <button class="itchio-redirect">Play Now!</button>
+        <p class="game-description"></p>
+    </template>
     <section>
         <h1>Home</h1>
         <img src="./images/profilepic_cropped.jpg" width="200" alt="profile pic">
@@ -154,6 +164,10 @@
             </li>
         </ul>
       </footer>
+      <span>
+        <hello-world></hello-world>
+        <noscript>Javascript is disabled, no hello's for you.</noscript>
+      </span>
       <script src="./scripts/custom.js"></script>
 </body>
 </html>
