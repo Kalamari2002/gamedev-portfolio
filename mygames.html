@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gabriel Ikezaki Game Dev Portfolio</title>
+    <title>My Games</title>
     <meta charset="UTF-8">
     <meta name="keywords" content="portfolio, game, design, development, programming, coding, gamedev, c#, unity, godot, game jams, visual art, animation, drawing">
     <meta name="description" content="CS major at UCSD who loves coding, designing and playing games! Take a look at the games I made, and the one I'm currently working on. Enjoy your stay!">
     
     <!--This lets you specify the aread of the window where content will be shown. Good to specify how it'll be displayed for different devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        game-gallery{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 2%;
+        }
+        game-gallery[col="three"]{
+            grid-template-columns: auto auto auto;
+        }
+        game-gallery[col="two"]{
+            grid-template-columns: auto auto;
+        }
+        game-gallery[col="one"]{
+            grid-template-columns: auto;
+        }
+    </style>
 </head>
-
 <body>
     <nav>
         <h1>Gabriel Ikezaki - Game Dev Portfolio</h1>
@@ -24,63 +39,45 @@
                 <a href="mygames.html">My Games</a>
             </li>
             <li>
-                <a href="about.html">About Me</a>
+                <a href="#">About Me</a>
             </li>
         </ul>
     </nav>
-    <section name="introduction">
-        <img src="./images/profilepic_cropped.jpg" width="200px">
-        <hgroup>
-            <h2>Hello!</h2>
-            <p>
-                I'm Gabriel, a CS major at UCSD who can't get enough of game design, art and programming. I'm proficient with Unity and I'm currently
-                learning Godot. Here you can take a look at my latest projects, as well as the games I've made throughout my dev journey.
-            </p>
-        </hgroup>
-    </section>
-    <main>
-        <section name="latest">
-            <h2>Latest</h2>
-            <h3>Jan 30, 2025</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LrtLagYpvW8?si=rUSM_M0Q9G2-af3b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>The core moveset of the first character, Aspen, is done! I've been working on this character for a while now, and I'm happy with how their kit's turning out so far. My goal is to release a very early build of the game with 3 characters so I can get some people testing the game feel and balance. <a href="devlog.html">More</a></p>
-        </section>
-
-        <section name="jams">
-            <h2>Jam Entries</h2>
+    <section title="Game Jams">
+        <h1>Game Jams</h1>
+        <game-gallery col="one">
             <div class="game-entry">
                 <a href="#">
                     <img src="./images/thumbnails/kitchendiver.png" width="300px" height="300px" title="Kitchen Diver">
                 </a>
                 <hgroup>
                     <h3>Kitchen Diver</h3>
-                    <p><i>Brackeys Game Jam 2023.2.</i> Placed <b>16th in the "Overall" category</b> and 14th in the "Fun" category <b>out of 910 entries.</b></p>
+                    <p>Side-scroller made in Unity. Entry for Brackey's Jam 2023.2.</p>
                 </hgroup>
             </div>
-            <br>
             <div class="game-entry">
                 <a href="#">
                     <img src="./images/thumbnails/RunningLowThumb.png" width="300px" height="300px" title="Running Low">
                 </a>
                 <hgroup>
                     <h3>Running Low</h3>
-                    <p><i>Itchio Mini Jam 73: Power.</i> Placed <b>14th in the "Overall" category</b> and 5th in the "Enjoyment" category <b>out of 176 entries.</b></p>
+                    <p>Waves Survival made in Unity. Entry for Itchio Mini Jam 73: Power</p>
                 </hgroup>
             </div>
-            <br>
             <div class="game-entry">
                 <a href="#">
                     <img src="./images/thumbnails/WeirdBossBattleThumb.png" width="300px" height="300px" title="Weird Boss Battle">
                 </a>
                 <hgroup>
                     <h3>Weird Boss Battle</h3>
-                    <p><i>Bear Jams Fall 2021</i></p>
+                    <p>Boss Battle made with Unity. Entry for Bear Jams Fall 2021</p>
                 </hgroup>
             </div>
-        </section>
-        
-        <section name="side-projects">
-            <h2>Side Projects</h2>
+        </game-gallery>
+    </section>
+    <section title="Side Projects">
+        <h1>Side Projects</h1>
+        <game-gallery col="two">
             <div class="game-entry">
                 <a href="#">
                     <img src="./images/thumbnails/WarriorsThumbnail.png" width="300px" height="300px" title="Warriors of the Lost Clan">
@@ -90,7 +87,6 @@
                     <p>Beatem up, made with Unity. I hold this one very close to my heart ^^</p>
                 </hgroup>
             </div>
-            <br>
             <div class="game-entry">
                 <a href="#">
                     <img src="./images/thumbnails/Blast2Cropped.png" width="300px" height="300px" title="Blast 2.0">
@@ -100,7 +96,6 @@
                     <p>Mobile bullet hell, made with Unity. Mother's day gift.</p>
                 </hgroup>
             </div>
-            <br>
             <div class="game-entry">
                 <a href="#">
                     <img src="./images/thumbnails/LimbsLimbs.png" width="300px" height="300px" title="Limbs">
@@ -119,8 +114,9 @@
                     <p>Beatem up, made with Unity. My first published game. Where it all began!</p>
                 </hgroup>
             </div>
-        </section>
-    </main>
+        </game-gallery>
+        
+    </section>
     <hr>
     <footer>
         <p>Author: Gabriel Ikezaki</p>
@@ -140,5 +136,4 @@
         </ul>
       </footer>
 </body>
-
 </html>

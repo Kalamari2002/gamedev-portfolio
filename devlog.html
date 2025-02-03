@@ -8,7 +8,6 @@
     
     <!--This lets you specify the aread of the window where content will be shown. Good to specify how it'll be displayed for different devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <nav>
@@ -21,10 +20,10 @@
                 <a href="devlog.html">Dev Log</a>
             </li>
             <li>
-                <a href="#">My Games</a>
+                <a href="mygames.html">My Games</a>
             </li>
             <li>
-                <a href="#">About Me</a>
+                <a href="about.html">About Me</a>
             </li>
         </ul>
     </nav>
@@ -52,12 +51,12 @@
             created an outline for which characters I would develop first:
         </p>
         <ol>
-            <li>Aspen (Skirmisher)</li>
-            <li>Raouss (Brawler)</li>
-            <li>Mival (Arcanist)</li>
-            <li>Akamien (Skirmisher)</li>
-            <li>Poko (Arcanist)</li>
-            <li>Sothro (Brawler)</li>
+            <li>Aspen</li>
+            <li>Raouss</li>
+            <li>Mival</li>
+            <li>Akamien</li>
+            <li>Poko</li>
+            <li>Sothro</li>
         </ol>
         <p> 
             Aspen's kit is done, so, if I stick to this outline, Raouss will be the next in development. But in any case, I made
@@ -65,20 +64,85 @@
             below are placeholders, but polish aside the first Aspen's basic moveset is done!
         </p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/LrtLagYpvW8?si=rUSM_M0Q9G2-af3b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <aside>
-            <h4>Who's Aspen?</h4>
+        <details>
+            <summary>Who's Aspen?</summary>
             <p>
-                Aspen is one of the player character who joined the campaign after the other players. D&D lets players pick different 
+                Aspen is one of the player character who joined the campaign after the other players. D&D lets players pick 
                 one or even multiple classes that have their own skills, specialties and identities. While most of us committed to a 
                 single class, Aspen is unique among our party members in that they are both a Fighter and a Wizard. This means that 
                 they can do a little bit of everything really, from kicking ass in close-quarter brawls, to sniping unsuspecting 
-                foes from afar and casting spells. That versatility was, to me, one of their most defining traits, 
+                foes from afar and casting spells. That versatility was, to me, one of the most defining traits of the character, 
                 and that became the driving inspiration for their range of different projectiles. A really cool thing that I found 
                 out about Aspen in the campaign is that they have this ability called "Bladesong", which makes them extra speedy
                 and <em>really</em> hard to pin down. I knew I just had to reference that in the game somehow, and that's when I had the
                 idea of shifting the game's flow to Aspen's POV. Instead of asking what Aspen would look like under the effects of 
-                this "Bladesong", I started asking what would everything else look to them. The answer: everything would probably look
+                this "Bladesong", I started asking how would everything else look to them. The answer: everything would probably look
                 hella slow. 
+            </p>
+        </details>
+        <p>
+            I haven't thought of a moveset for all characters, but I do have some ideas for their base stats, namely Health and Agility.
+            Below you can take a look at how I'm planning the base of all characters.
+        </p>
+        <table>
+            <caption>Character Base Stats</caption>
+            <colgroup>
+                <col span="4" style="background-color: rgb(177, 177, 177)">
+              </colgroup>
+            <tr>
+                <th>Character</th>
+                <th>Archetype</th>
+                <th>Health</th>
+                <th>Agility</th>
+            </tr>
+            <tr>
+                <td>Akamien</td>
+                <td>Skirmisher</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Aspen</td>
+                <td>Skirmisher</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Mival</td>
+                <td>Arcanist</td>
+                <td>90</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Poko</td>
+                <td>Arcanist</td>
+                <td>90</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Raouss</td>
+                <td>Brawler</td>
+                <td>130</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Sothro</td>
+                <td>Brawler</td>
+                <td>110</td>
+                <td>25</td>
+            </tr>
+        </table>
+        <aside>
+            <p>
+                Agility determines how quickly a character can change their position after moving to a quadrant. Everytime a character
+                moves to a quadrant, there's a brief moment where they can't move again. I call this "end-lag", where 
+            </p>
+            <blockquote>
+                <i>End-Lag = 1/Agility seconds</i>
+            </blockquote>
+            <p>
+                Characters with higher Agility have less end-lag, meaning moving to a quadrant isn't as much of a commitment and they can 
+                dodge attacks more easily.
             </p>
         </aside>
     </article>
