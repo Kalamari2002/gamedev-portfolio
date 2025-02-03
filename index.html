@@ -8,6 +8,22 @@
     
     <!--This lets you specify the aread of the window where content will be shown. Good to specify how it'll be displayed for different devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        game-gallery{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 2%;
+        }
+        game-gallery[col="three"]{
+            grid-template-columns: auto auto auto;
+        }
+        game-gallery[col="two"]{
+            grid-template-columns: auto auto;
+        }
+        game-gallery[col="one"]{
+            grid-template-columns: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,7 +62,7 @@
 
         <section title="jams">
             <h2>Jam Entries</h2>
-            <span>
+            <game-gallery col="three">
                 <div class="game-entry">
                     <a href="#">
                         <img src="./images/thumbnails/kitchendiver.png" width="300" height="300" title="Kitchen Diver">
@@ -74,49 +90,49 @@
                         <p><i>Bear Jams Fall 2021</i></p>
                     </hgroup>
                 </div>
-            </span>
+            </game-gallery>
         </section>
         
         <section title="side projects">
             <h2>Side Projects</h2>
-            <div class="game-entry">
-                <a href="#">
-                    <img src="./images/thumbnails/WarriorsThumbnail.png" width="300" height="300" title="Warriors of the Lost Clan">
-                </a>
-                <hgroup>
-                    <h3>Warriors of the Lost Clan</h3>
-                    <p>Beatem up, made with Unity. I hold this one very close to my heart ^^</p>
-                </hgroup>
-            </div>
-            <br>
-            <div class="game-entry">
-                <a href="#">
-                    <img src="./images/thumbnails/Blast2Cropped.png" width="300" height="300" title="Blast 2.0">
-                </a>
-                <hgroup>
-                    <h3>Blast 2.0</h3>
-                    <p>Mobile bullet hell, made with Unity. Mother's day gift.</p>
-                </hgroup>
-            </div>
-            <br>
-            <div class="game-entry">
-                <a href="#">
-                    <img src="./images/thumbnails/LimbsLimbs.png" width="300" height="300" title="Limbs">
-                </a>
-                <hgroup>
-                    <h3>Limbs</h3>
-                    <p>Platformer, made with Unity. My first game jam entry with my brother.</p>
-                </hgroup>
-            </div>
-            <div class="game-entry">
-                <a href="#">
-                    <img src="./images/thumbnails/DemonsThumb.png" width="300" height="300" title="The Night of 100 Demons">
-                </a>
-                <hgroup>
-                    <h3>The Night of 100 Demons</h3>
-                    <p>Beatem up, made with Unity. My first published game. Where it all began!</p>
-                </hgroup>
-            </div>
+            <game-gallery col="two">
+                <div class="game-entry">
+                    <a href="#">
+                        <img src="./images/thumbnails/WarriorsThumbnail.png" width="300" height="300" title="Warriors of the Lost Clan">
+                    </a>
+                    <hgroup>
+                        <h3>Warriors of the Lost Clan</h3>
+                        <p>Beatem up, made with Unity. I hold this one very close to my heart ^^</p>
+                    </hgroup>
+                </div>
+                <div class="game-entry">
+                    <a href="#">
+                        <img src="./images/thumbnails/Blast2Cropped.png" width="300" height="300" title="Blast 2.0">
+                    </a>
+                    <hgroup>
+                        <h3>Blast 2.0</h3>
+                        <p>Mobile bullet hell, made with Unity. Mother's day gift.</p>
+                    </hgroup>
+                </div>
+                <div class="game-entry">
+                    <a href="#">
+                        <img src="./images/thumbnails/LimbsLimbs.png" width="300" height="300" title="Limbs">
+                    </a>
+                    <hgroup>
+                        <h3>Limbs</h3>
+                        <p>Platformer, made with Unity. My first game jam entry with my brother.</p>
+                    </hgroup>
+                </div>
+                <div class="game-entry">
+                    <a href="#">
+                        <img src="./images/thumbnails/DemonsThumb.png" width="300" height="300" title="The Night of 100 Demons">
+                    </a>
+                    <hgroup>
+                        <h3>The Night of 100 Demons</h3>
+                        <p>Beatem up, made with Unity. My first published game. Where it all began!</p>
+                    </hgroup>
+                </div>
+            </game-gallery>
         </section>
     </main>
     <hr>
